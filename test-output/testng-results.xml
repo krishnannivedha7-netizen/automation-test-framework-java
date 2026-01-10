@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-09T17:14:16 IST" name="Default suite" finished-at="2026-01-09T17:14:28 IST" duration-ms="12136">
+  <suite started-at="2026-01-10T18:39:01 IST" name="Default suite" finished-at="2026-01-10T18:39:09 IST" duration-ms="7798">
     <groups>
     </groups>
-    <test started-at="2026-01-09T17:14:16 IST" name="Default test" finished-at="2026-01-09T17:14:28 IST" duration-ms="12136">
-      <class name="tests.FirstTest">
-        <test-method signature="openGoogle()[pri:0, instance:tests.FirstTest@4135c3b]" started-at="2026-01-09T17:14:16 IST" name="openGoogle" finished-at="2026-01-09T17:14:28 IST" duration-ms="12039" status="PASS">
+    <test started-at="2026-01-10T18:39:01 IST" name="Default test" finished-at="2026-01-10T18:39:09 IST" duration-ms="7798">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@4c583ecf]" started-at="2026-01-10T18:39:01 IST" name="setup" finished-at="2026-01-10T18:39:08 IST" duration-ms="6608" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openGoogle -->
-      </class> <!-- tests.FirstTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@4c583ecf]" started-at="2026-01-10T18:39:08 IST" name="validLoginTest" finished-at="2026-01-10T18:39:08 IST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4c583ecf]" started-at="2026-01-10T18:39:08 IST" name="tearDown" finished-at="2026-01-10T18:39:09 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
