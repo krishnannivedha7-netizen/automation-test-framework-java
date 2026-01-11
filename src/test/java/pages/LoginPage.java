@@ -33,4 +33,16 @@ public class LoginPage {
 		enterPassword(password);
 		clickLogin();
 	}
-}
+	
+	private By errorMessage = By.cssSelector("[data-test='error']");
+	private By productsTitle = By.className("title");
+	
+	public boolean isErrorMessageDisplayed() {
+		return driver.findElement(errorMessage).isDisplayed();
+	}
+	
+	public boolean isLoginSuccessful() {
+		return driver.findElement(productsTitle).isDisplayed();
+	}
+	
+	}
