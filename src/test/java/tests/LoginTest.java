@@ -2,11 +2,14 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
+import utils.TestListener;
 
 import base.BaseTest;
 import pages.LoginPage;
 
-public class LoginTest extends BaseTest {
+	@Listeners(TestListener.class)
+	public class LoginTest extends BaseTest {
 	
 	@Test
 	public void validLoginTest() {
@@ -19,6 +22,8 @@ public class LoginTest extends BaseTest {
 				);
 		}
 	@Test
+	
+	
 	public void invalidLoginTest() {
 		
 		LoginPage loginPage = new LoginPage(driver);
@@ -29,5 +34,6 @@ public class LoginTest extends BaseTest {
 				"Error Message not displayed for invalid login"
 				);
 	}
+	
 
 }

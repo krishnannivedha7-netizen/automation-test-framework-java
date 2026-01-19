@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-12T12:31:53 IST" name="Default suite" finished-at="2026-01-12T12:32:05 IST" duration-ms="12705">
+  <suite started-at="2026-01-19T19:20:57 IST" name="Default suite" finished-at="2026-01-19T19:21:17 IST" duration-ms="19475">
     <groups>
     </groups>
-    <test started-at="2026-01-12T12:31:53 IST" name="Default test" finished-at="2026-01-12T12:32:05 IST" duration-ms="12705">
+    <test started-at="2026-01-19T19:20:57 IST" name="Default test" finished-at="2026-01-19T19:21:17 IST" duration-ms="19475">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:31:53 IST" name="setup" finished-at="2026-01-12T12:32:00 IST" duration-ms="6996" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:20:58 IST" name="setup" finished-at="2026-01-19T19:21:09 IST" duration-ms="11390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:32:00 IST" name="invalidLoginTest" finished-at="2026-01-12T12:32:00 IST" duration-ms="760" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:21:09 IST" name="invalidLoginTest" finished-at="2026-01-19T19:21:10 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:32:00 IST" name="tearDown" finished-at="2026-01-12T12:32:01 IST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:21:10 IST" name="tearDown" finished-at="2026-01-19T19:21:10 IST" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:32:01 IST" name="setup" finished-at="2026-01-12T12:32:04 IST" duration-ms="3329" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:21:10 IST" name="setup" finished-at="2026-01-19T19:21:16 IST" duration-ms="5692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:32:04 IST" name="validLoginTest" finished-at="2026-01-12T12:32:05 IST" duration-ms="765" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:21:16 IST" name="validLoginTest" finished-at="2026-01-19T19:21:17 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@692f203f]" started-at="2026-01-12T12:32:05 IST" name="tearDown" finished-at="2026-01-12T12:32:05 IST" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@f6efaab]" started-at="2026-01-19T19:21:17 IST" name="tearDown" finished-at="2026-01-19T19:21:17 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
