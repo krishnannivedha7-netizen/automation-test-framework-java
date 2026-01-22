@@ -12,24 +12,34 @@ import java.time.format.DateTimeFormatter;
 
 public class ScreenshotUtils {
 
-    public static void takeScreenshot(WebDriver driver, String testName) {
+	public static void takeScreenshot(WebDriver driver, String testName) {
 
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
+	    if (driver == null) {
+	        System.out.println("Driver is null. Screenshot skipped for: " + testName);
+	        return;
+	    }
 
-        String timestamp = LocalDateTime.now()
-                .format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+	    if (!(driver instanceof TakesScreenshot)) {
+	        System.out.println("Driver does not support screenshots. Skipped: " + testName);
+	        return;
+	    }
 
-        File destination = new File(
-                "screenshots/" + testName + "_" + timestamp + ".png"
-        );
+	    TakesScreenshot ts = (TakesScreenshot) driver;
+	    File source = ts.getScreenshotAs(OutputType.FILE);
 
-        destination.getParentFile().mkdirs();
+	    String timestamp = LocalDateTime.now()
+	            .format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
 
-        try {
-            Files.copy(source.toPath(), destination.toPath());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+	    File destination = new File(
+	            "screenshots/" + testName + "_" + timestamp + ".png"
+	    );
+
+	    destination.getParentFile().mkdirs();
+
+	    try {
+	        Files.copy(source.toPath(), destination.toPath());
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
 }
